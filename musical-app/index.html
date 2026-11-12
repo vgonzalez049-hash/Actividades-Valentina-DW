@@ -1,12 +1,63 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<!--Doctype es una sentencia que indica que voy a trabajar con un 
+documento de HTML-->
+
+<html lang="es"> <!--Aqui inicia mi página con la etiqueta de html-->
+<head><!-- Aqui en el head esta todo lo que no es visible en la pagina pero lo hace funcionar-->
+ <!--Con los metadatos puedo colocar caracteres especial, dar información al SEO para posicionamiento web---->
+ <meta charset="UTF-8"> <!--Permite caracteres especiales-->
+  <meta name="description" content="Musical para Pop">
+  <meta name="author" content="Valentina González">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 <title>Musical Val</title>
 </head>
 <body>
 
-<h1>Musical Val</h1>
-<p>Escucha mis 3 canciones de POP</p>
+ <div class="container-musical">
+    <img src="pop.jpg" alt="Imagen de musical app" class="imagen-portada">
+
+    <h1>Musical Val</h1>
+    <p class="pmusical"> Musical para Pop</p>
+
+     
+    <div class="lista-canciones"></div>
+        <!--CANCION 1-->
+        <div class="canciones">
+        <p>1. 🌟Superestrella</p>
+         <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Aitana - SUPERESTRELLA (LETRA).mp3" type="audio/mpeg">
+                </audio>
+
+
+
+     </div>
+
+      <!--CANCION 2-->
+        <div class="canciones">
+        <p>2. 🐎🖤Dark Horse</p>
+         <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 2 -->
+                    <source src="Katy Perry - Dark Horse ft. Juicy J.mp3" type="audio/mpeg">
+                </audio>
+
+
+
+     </div>
+
+     <!--CANCION 3-->
+        <div class="canciones">
+        <p>3. 🪩One More Night</p>
+         <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 3 -->
+                    <source src="Maroon 5 - One More Night (Lyric Video) - Maroon5VEVO.mp3" type="audio/mpeg">
+                </audio>
+
+
+
+     </div>
 
 </body>
 </html>
